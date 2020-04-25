@@ -1,0 +1,810 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'A
+	/home/me/install
+	..
+1586729094
+'H
+	/home/me/
+	..
+1586723637
+'a
+	/home/me/install
+	..
+1586729068
+'b
+	/home/me/bin/
+	..
+1586723637
+'h
+	/home/me/
+	..
+1586730108
+'k
+	/home/me/install
+	molokai
+1586772323
+'p
+	/home/me/work/tests
+	..
+1587257006
+'r
+	/
+	bin
+1586737581
+'s
+	/home/me/install
+	..
+1586729079
+'x
+	/home/me/install
+	..
+1586729075
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v1
+ov
+m-1
+l2
+r12
+
+# Left window history (oldest to newest):
+d/home/me
+	.zim
+22
+d/home/me/.zim
+	modules
+1
+d/home/me
+	.zim
+22
+d/home/me/.zim
+	modules
+1
+d/home/me/.zim/modules
+	completion
+1
+d/home/me/.zim
+	modules
+1
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	coc-settings.json
+2
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me/.config
+	nvim
+15
+d/home/me
+	work
+15
+d/home/me/work
+	tests
+5
+d/home/me/work/tests
+	test001.py
+1
+d/home/me/downloads
+	external-content.duckduckgo.com.jpg
+11
+d/home/me
+	downloads
+4
+d/home
+	me
+2
+d/
+	usr
+17
+d/usr
+	local
+6
+d/usr/local
+	bin
+1
+d/usr/local/bin
+	sxiv-rifle.sh
+1
+d/usr/local
+	lib
+2
+d/usr/local/lib
+	..
+0
+d/usr/local
+	lib64
+3
+d/usr/local/lib64
+	..
+0
+d/usr/local
+	lib64
+3
+d/usr
+	sbin
+7
+d/usr/sbin
+	ModemManager
+1
+d/usr
+	share
+8
+d/usr/share
+	cursors
+19
+d/usr
+	lib64
+4
+d/usr/lib64
+	CLuceneConfig.cmake
+1
+d/usr
+	lib
+3
+d/usr/lib
+	..
+0
+d/usr
+	bin
+1
+d/usr/bin
+	..
+0
+d/usr
+	bin
+1
+d/
+	var
+18
+d/var
+	cache
+1
+d/var/cache
+	..
+0
+d/var
+	cache
+1
+d/
+	var
+18
+d/var
+	db
+2
+d/var/db
+	..
+0
+d/var
+	db
+2
+d/
+	opt
+10
+d/home/me
+	.config
+4
+d/home/me/.config
+	bspwm
+3
+d/home/me/.config/bspwm
+	bspwmrc
+1
+d/home/me/.config
+	sxhkd
+20
+d/home/me/.config/sxhkd
+	sxhkdrc
+1
+d/home/me/.config
+	sxhkd
+20
+d/home/me
+	.config
+4
+d/home/me/.config
+	sxhkd
+20
+d/home/me/.config/sxhkd
+	sxhkdrc
+1
+d/home/me/.config
+	sxhkd
+20
+d/home/me/.config/sxhkd
+	sxhkdrc
+1
+d/home/me/.config
+	polybar
+16
+d/home/me/.config/polybar
+	..
+0
+d/home/me/.config
+	polybar
+16
+d/home/me/.config/polybar
+	config
+1
+d/home/me/.config
+	polybar
+16
+d/home/me/.config/polybar
+	config
+1
+d/home/me/.config
+	bspwm
+3
+d/home/me/.config/bspwm
+	bspwmrc
+1
+d/home/me/.config
+	bspwm
+3
+d/home/me
+	..
+0
+d/home
+	me
+2
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me/work/tests
+	test001.py
+2
+d/home/me/work
+	tests
+6
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me/work/tests
+	.vimspector.json
+1
+d/home/me/work
+	tests
+6
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me/work/tests
+	.vimspector.json
+1
+d/home/me/work
+	tests
+6
+d/home/me
+	.config
+4
+d/home/me/.config
+	nvim
+15
+d/home/me/.config/nvim
+	init.vim
+3
+d/home/me/work/tests
+	.vimspector.json
+1
+d/home/me/work
+	Tarsier
+3
+d/home/me/work/Tarsier
+	CNN
+4
+d/home/me/work/Tarsier/CNN
+	vdsr_an
+3
+d/home/me/work/Tarsier/CNN/vdsr_an
+	prelu_MODEL.py
+14
+d/home/me/work/tests
+	..
+0
+d/home/me/work
+	..
+0
+d/home/me
+	tmp
+19
+d/home/me/tmp
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/etc/portage
+	package.accept_keywords
+9
+D/
+	usr
+17
+D/usr
+	share
+9
+D/usr/share
+	consolefonts
+23
+D/usr/share/consolefonts
+	eurlatgr.psfu.gz
+45
+D/usr/share
+	consolefonts
+23
+D/usr
+	local
+7
+D/usr/local
+	bin
+1
+D/usr/local/bin
+	..
+0
+D/usr/local
+	bin
+1
+D/usr
+	share
+9
+D/usr/share
+	consolefonts
+23
+D/usr
+	local
+7
+D/usr/local
+	lib
+2
+D/usr/local/lib
+	..
+0
+D/usr/local
+	lib64
+3
+D/usr/local/lib64
+	..
+0
+D/usr/local
+	sbin
+4
+D/usr/local/sbin
+	..
+0
+D/usr/local
+	sbin
+4
+D/usr
+	share
+9
+D/usr/share
+	consolefonts
+23
+D/usr/share/consolefonts
+	eurlatgr.psfu.gz
+45
+D/usr/share
+	man
+49
+D/usr
+	share
+9
+D/usr/share
+	fonts
+10
+D/usr/share/fonts
+	75dpi
+1
+D/usr/share/fonts/75dpi
+	..
+0
+D/usr/share/fonts
+	100dpi
+2
+D/usr/share/fonts/100dpi
+	..
+0
+D/usr/share/fonts
+	cyrillic
+3
+D/usr/share/fonts/cyrillic
+	..
+0
+D/usr/share/fonts
+	dejavu
+4
+D/usr/share/fonts/dejavu
+	..
+0
+D/usr/share/fonts
+	droid
+5
+D/usr/share/fonts/droid
+	..
+0
+D/usr/share/fonts
+	encodings
+6
+D/usr/share
+	consolefonts
+4
+D/usr/share/consolefonts
+	lat2-12.psfu.gz
+49
+D/usr/share
+	consolefonts
+4
+D/usr/share/consolefonts
+	partialfonts
+1
+D/usr/share/consolefonts/partialfonts
+	..
+0
+D/usr/share/consolefonts
+	partialfonts
+1
+D/
+	etc
+3
+D/etc
+	prelink.conf.d
+47
+D/etc/prelink.conf.d
+	..
+0
+D/etc
+	conf.d
+5
+D/etc/conf.d
+	ip6tables
+19
+D/home/me
+	tmp
+32
+D/home/me/tmp
+	..
+0
+D/home/me
+	tmp
+32
+D/home
+	me
+2
+D/home/me
+	pictures
+7
+D/home/me/pictures
+	2003
+3
+D/home/me/pictures/2003
+	с налодонника
+1
+D/home/me/pictures/2003/с налодонника
+	2
+2
+D/home/me/pictures/2003/с налодонника/2
+	Image-20.JPG
+11
+D/home/me
+	.config
+3
+D/home/me/.config
+	mc
+13
+D/home/me
+	install
+27
+D/home/me/install
+	etc
+4
+D/home/me/install/etc
+	..
+0
+D/home/me/install
+	etc
+4
+D/home/me
+	.pylint.d
+17
+D/home
+	me
+2
+D/
+	tmp
+16
+D/tmp
+	..
+0
+D/
+	tmp
+16
+D/tmp
+	..
+0
+D/
+	etc
+3
+D/etc
+	conf.d
+5
+D/
+	usr
+17
+D/usr
+	sbin
+7
+D/
+	etc
+3
+D/etc
+	portage
+45
+D/etc/portage
+	package.use
+3
+D/etc/portage/package.use
+	..
+0
+D/etc/portage
+	package.mask
+2
+D/etc/portage/package.mask
+	..
+0
+D/etc/portage
+	repo.postsync.d
+4
+D/etc/portage/repo.postsync.d
+	..
+0
+D/etc/portage
+	repos.conf
+5
+D/etc/portage/repos.conf
+	..
+0
+D/etc/portage
+	savedconfig
+6
+D/etc
+	portage
+45
+D/
+	usr
+17
+D/usr
+	local
+6
+D/usr/local
+	sbin
+4
+D/usr
+	share
+8
+D/usr/share
+	portage
+49
+D/usr/share/portage
+	config
+1
+D/usr/share/portage/config
+	sets
+1
+D/usr/share/portage/config/sets
+	..
+0
+D/usr/share/portage/config
+	sets
+1
+D/usr/share/portage
+	config
+1
+D/usr/share
+	portage
+49
+D/usr
+	share
+8
+D/
+	usr
+17
+D/var/cache
+	distfiles
+2
+D/var/cache/distfiles
+	at-spi2-atk-2.32.0.tar.xz
+4
+D
+
+# Command line history (oldest to newest):
+:find /usr/ -name "cuda"
+:find /usr/ -name "*cuda*"
+:find /usr/ -name "libcudart*"
+:.!jh
+:.,.+4!!H
+:?
+:.,.+7!;
+:setglobal
+:!cd /usr/share/applications/
+:!cd ~
+:colorscheme onedark-ph
+:colorscheme
+:cd /clo
+:cd cloud/
+:set viewcolumns=-{name}..,6{size},11{perms}
+:set viewcolumns=-{name}..,7{size},12{perms},11{date}
+:colorscheme 
+:lsview
+:tree
+:set wildmenu
+:set viewcolumns=-{name}..,7{size}
+:help
+:mkdir nnn
+:$
+:20<
+:.
+:Q
+:.!
+:.!ls
+:ls
+:view
+:tabnew
+:colorscheme darkdesert
+:colorscheme gruvbox
+:colorscheme iceberg
+:colorscheme mc-like
+:colorscheme molokai
+:colorscheme onedark
+:colorscheme semidarkdesert
+:colorscheme zenburn_1
+:colorscheme palenight
+:colorscheme ph
+:find
+:find ./ -name "distfiles"
+:q
+
+# Search history (oldest to newest):
+/venv
+/lo
+/va
+/db
+/repo
+/?
+/desktop
+/cd /usr/share/
+/applica
+/appli
+/.vifm
+/install
+/app
+/por
+/nnn
+/help
+/.local
+/.loc
+/sh
+/fon
+/local
+/sha
+/lib/
+/lib
+/consol
+/conf
+/conf.d
+/console
+/bi
+/share
+/applications
+/sudo find ./ -name sxiv.sh
+/sxiv
+/insta
+/us
+/et
+/.confi
+/inst
+/usr
+/port
+/po
+/cudnn
+/.config
+/poly
+/nvi
+/.con
+
+# Prompt history (oldest to newest):
+pdesktop
+ptemplates
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/me/.local/share/vifm/Trash/000_Arimo-Italic.png
+	/home/me/Arimo-Italic.png
+t/home/me/.local/share/vifm/Trash/000_.profile
+	/home/me/.profile
+t/home/me/.local/share/vifm/Trash/000_nnn
+	/home/me/.config/nnn
+t/home/me/.local/share/vifm/Trash/000_urxvt
+	/home/me/.config/urxvt
+t/home/me/.local/share/vifm/Trash/000_LanguageClient-neovim
+	/home/me/tmp/LanguageClient-neovim
+t/home/me/.local/share/vifm/Trash/001_nnn
+	/home/me/tmp/nnn
+t/home/me/.local/share/vifm/Trash/000_ranger
+	/home/me/tmp/ranger
+t/home/me/.local/share/vifm/Trash/000_vim-code-dark
+	/home/me/tmp/vim-code-dark
+t/home/me/.local/share/vifm/Trash/000_zathura
+	/home/me/tmp/zathura
+t/home/me/.local/share/vifm/Trash/000_feh.desktop
+	/home/me/tmp/feh.desktop
+t/home/me/.local/share/vifm/Trash/000_localmount
+	/home/me/tmp/localmount
+t/home/me/.local/share/vifm/Trash/000_modules
+	/home/me/tmp/modules
+t/home/me/.local/share/vifm/Trash/000_mtab
+	/home/me/tmp/mtab
+t/home/me/.local/share/vifm/Trash/000_mupdf.desktop
+	/home/me/tmp/mupdf.desktop
+t/home/me/.local/share/vifm/Trash/000_net
+	/home/me/tmp/net
+t/home/me/.local/share/vifm/Trash/000_venv
+	/home/me/venv
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s0

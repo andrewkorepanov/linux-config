@@ -1,0 +1,10 @@
+[2020-03-22 01:42:43.411] [sharedprocess] [info] main {"machineId":"35c14730-40c0-435e-b143-f61f0fbf8e2f","windowId":2}
+[2020-03-22 01:43:23.424] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-03-22 01:53:06.623] [sharedprocess] [info] Installing extension: ms-dynamics-smb.al
+[2020-03-22 01:53:14.868] [sharedprocess] [info] Downloaded extension: ms-dynamics-smb.al /tmp/bcd82ee0-a795-45c8-851a-e3e3bb2723df
+[2020-03-22 01:53:16.895] [sharedprocess] [info] Extracted extension to /home/me/.vscode/extensions/.ms-dynamics-smb.al-4.0.249486: ms-dynamics-smb.al
+[2020-03-22 01:53:16.895] [sharedprocess] [info] Renamed to /home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486
+[2020-03-22 01:53:16.896] [sharedprocess] [info] Installation completed. ms-dynamics-smb.al
+[2020-03-22 01:53:16.983] [sharedprocess] [info] Extensions installed successfully: ms-dynamics-smb.al
+[2020-03-22 01:54:03.709] [sharedprocess] [info] Uninstalling extension: ms-dynamics-smb.al
+[2020-03-22 01:54:03.716] [sharedprocess] [info] Successfully uninstalled extension: ms-dynamics-smb.al

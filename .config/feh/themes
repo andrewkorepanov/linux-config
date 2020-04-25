@@ -1,0 +1,1 @@
+imagemap -rVq --thumb-width 40 --thumb-height 30 --index-info '%n\n%wx%h'

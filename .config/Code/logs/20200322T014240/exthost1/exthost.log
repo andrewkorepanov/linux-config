@@ -1,0 +1,44 @@
+[2020-03-22 01:42:41.497] [exthost] [info] extension host started
+[2020-03-22 01:42:41.531] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"extensionId":{"value":"vscode.python","_lower":"vscode.python"},"activationEvent":"onLanguage:python"}
+[2020-03-22 01:42:41.531] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/python/dist/pythonMain
+[2020-03-22 01:42:41.533] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"extensionId":{"value":"ms-python.python","_lower":"ms-python.python"},"activationEvent":"onLanguage:python"}
+[2020-03-22 01:42:41.534] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/me/.vscode/extensions/ms-python.python-2020.3.69010/out/client/extension
+[2020-03-22 01:42:41.596] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-03-22 01:42:41.596] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-03-22 01:42:41.598] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-03-22 01:42:41.598] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/emmet/dist/extension
+[2020-03-22 01:42:41.613] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-03-22 01:42:41.613] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/git/dist/main
+[2020-03-22 01:42:41.621] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-03-22 01:42:41.621] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/github-authentication/dist/extension.js
+[2020-03-22 01:42:41.623] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-03-22 01:42:41.623] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/merge-conflict/dist/extension
+[2020-03-22 01:42:41.625] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-03-22 01:42:41.625] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/search-result/dist/extension.js
+[2020-03-22 01:42:41.626] [exthost] [info] ExtensionService#_doActivateExtension vscode.vscode-account {"startup":true,"extensionId":{"value":"vscode.vscode-account","_lower":"vscode.vscode-account"},"activationEvent":"*"}
+[2020-03-22 01:42:41.626] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/vscode-account/dist/extension.js
+[2020-03-22 01:42:41.629] [exthost] [info] eager extensions activated
+[2020-03-22 01:49:42.105] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"extensionId":{"value":"vscode.debug-server-ready","_lower":"vscode.debug-server-ready"},"activationEvent":"onDebugResolve"}
+[2020-03-22 01:49:42.105] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/debug-server-ready/dist/extension
+[2020-03-22 01:53:17.182] [exthost] [info] ExtensionService#_doActivateExtension ms-dynamics-smb.al {"startup":false,"extensionId":{"value":"ms-dynamics-smb.al","_lower":"ms-dynamics-smb.al"},"activationEvent":"workspaceContains:app.json"}
+[2020-03-22 01:53:17.182] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/out/src/extension
+[2020-03-22 01:53:17.229] [exthost] [error] Activating extension ms-dynamics-smb.al failed due to an error:
+[2020-03-22 01:53:17.230] [exthost] [error] Error: ENOENT: no such file or directory, chmod '/home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/bin/Microsoft.Dynamics.Nav.EditorServices.Host'
+	at Object.chmodSync (fs.js:1045:3)
+	at EditorService.getServerPath (/home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/out/src/services/extensionService.js:60:16)
+	at EditorService.tryStartLanguageServer (/home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/out/src/services/editorService.js:65:33)
+	at AlExtension.activateServices (/home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/out/src/extension.js:53:52)
+	at activate (/home/me/.vscode/extensions/ms-dynamics-smb.al-4.0.249486/out/src/extension.js:34:31)
+	at Function._callActivateOptional (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:722:204)
+	at Function._callActivate (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:721:862)
+	at /opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:720:960
+	at async Promise.all (index 0)
+	at async d.$activate (/opt/visual-studio-code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:727:297)
+[2020-03-22 01:53:29.199] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2020-03-22 01:53:29.199] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/configuration-editing/dist/extension
+[2020-03-22 01:53:29.201] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2020-03-22 01:53:29.201] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2020-03-22 01:53:29.208] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2020-03-22 01:53:29.208] [exthost] [info] ExtensionService#loadCommonJSModule file:///opt/visual-studio-code/resources/app/extensions/typescript-language-features/dist/extension
+[2020-03-22 01:54:29.756] [exthost] [info] ExtensionService#_doActivateExtension asvetliakov.vscode-neovim {"startup":false,"extensionId":{"value":"asvetliakov.vscode-neovim","_lower":"asvetliakov.vscode-neovim"},"activationEvent":"*"}
+[2020-03-22 01:54:29.756] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/me/.vscode/extensions/asvetliakov.vscode-neovim-0.0.50/out/extension.js

@@ -1,0 +1,14 @@
+[2020-03-22 00:30:41.244] [sharedprocess] [info] main {"machineId":"35c14730-40c0-435e-b143-f61f0fbf8e2f","windowId":2}
+[2020-03-22 00:31:21.267] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-03-22 00:37:37.199] [sharedprocess] [info] Installing extension: ms-python.python
+[2020-03-22 00:37:41.436] [sharedprocess] [info] Downloaded extension: ms-python.python /tmp/e7959513-63fc-4907-98d7-cc4ff76cde9b
+[2020-03-22 00:37:43.395] [sharedprocess] [info] Extracted extension to /home/me/.vscode/extensions/.ms-python.python-2020.3.69010: ms-python.python
+[2020-03-22 00:37:43.396] [sharedprocess] [info] Renamed to /home/me/.vscode/extensions/ms-python.python-2020.3.69010
+[2020-03-22 00:37:43.399] [sharedprocess] [info] Installation completed. ms-python.python
+[2020-03-22 00:37:43.483] [sharedprocess] [info] Extensions installed successfully: ms-python.python
+[2020-03-22 00:41:35.558] [sharedprocess] [info] Installing extension: asvetliakov.vscode-neovim
+[2020-03-22 00:41:36.914] [sharedprocess] [info] Downloaded extension: asvetliakov.vscode-neovim /tmp/f7fd1ad5-9428-4b1d-b4e4-e34bf0d8c01a
+[2020-03-22 00:41:37.820] [sharedprocess] [info] Extracted extension to /home/me/.vscode/extensions/.asvetliakov.vscode-neovim-0.0.50: asvetliakov.vscode-neovim
+[2020-03-22 00:41:37.820] [sharedprocess] [info] Renamed to /home/me/.vscode/extensions/asvetliakov.vscode-neovim-0.0.50
+[2020-03-22 00:41:37.821] [sharedprocess] [info] Installation completed. asvetliakov.vscode-neovim
+[2020-03-22 00:41:37.831] [sharedprocess] [info] Extensions installed successfully: asvetliakov.vscode-neovim

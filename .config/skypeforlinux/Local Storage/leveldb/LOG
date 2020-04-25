@@ -1,0 +1,8 @@
+2020/04/18-22:23:54.366 6bca Reusing MANIFEST leveldb/MANIFEST-000001
+2020/04/18-22:23:54.366 6bca Recovering log #16
+2020/04/18-22:23:54.367 6bca Level-0 table #20: started
+2020/04/18-22:23:54.369 6bca Level-0 table #20: 58666 bytes OK
+2020/04/18-22:23:54.371 6bca Delete type=0 #16
+2020/04/18-22:25:20.794 6cab Level-0 table #23: started
+2020/04/18-22:25:20.862 6cab Level-0 table #23: 58396 bytes OK
+2020/04/18-22:25:20.864 6cab Delete type=0 #21

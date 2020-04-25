@@ -1,0 +1,8 @@
+[2020-03-22 00:30:37.958] [main] [error] [uncaught exception in main]: Unable to retrieve mac address (Error: Command failed: /sbin/ifconfig -a || /sbin/ip link
+/bin/sh: /sbin/ifconfig: No such file or directory
+/bin/sh: /sbin/ip: No such file or directory
+)
+[2020-03-22 00:30:38.058] [main] [info] update#setState idle
+[2020-03-22 00:30:53.358] [main] [error] webContents#will-navigate: Prevented webcontent navigation
+[2020-03-22 00:31:08.073] [main] [info] update#setState checking for updates
+[2020-03-22 00:31:08.106] [main] [info] update#setState available for download

@@ -1,0 +1,33 @@
+[27601:0418/222354.258152:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+(electron) 'setZoomLevel function' is deprecated and will be removed. Please use 'zoomLevel property' instead.
+(electron) 'getZoomLevel function' is deprecated and will be removed. Please use 'zoomLevel property' instead.
+(electron) 'setBadgeCount function' is deprecated and will be removed. Please use 'badgeCount property' instead.
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM mic_call
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM call
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM loopback_call
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM mic_call
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM call
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.2.1.2/work/alsa-lib-1.2.1.2/src/pcm/pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM loopback_call
+[27601:0418/222515.611730:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222558.871652:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+(electron) 'setClosable function' is deprecated and will be removed. Please use 'closable property' instead.
+[27601:0418/222621.159800:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222635.986321:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222655.525953:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222721.920877:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222745.716485:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222809.657649:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/222824.208874:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/223009.361072:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/223013.022025:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/223013.719454:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/224359.373743:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/224420.091294:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/224446.223308:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[27601:0418/224455.587385:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)

@@ -1,0 +1,11 @@
+{
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 3,
+    "vscode-neovim.neovimPath": "/usr/bin/nvim",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/usr/bin/pylint",
+    "python.formatting.provider":"yapf",
+    "python.formatting.yapfPath": "/usr/lib64/python3.6/site-packages/yapf",
+    "workbench.iconTheme": "al"
+}
