@@ -1,0 +1,3 @@
+# /etc/acpi/events/battery 
+event=battery.*
+action=/etc/acpi/actions/battery.sh %e

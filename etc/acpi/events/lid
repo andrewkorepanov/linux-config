@@ -1,0 +1,3 @@
+# /etc/acpi/events/lid
+event=button/lid
+action=/etc/acpi/actions/lid.sh %e

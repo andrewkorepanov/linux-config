@@ -1,0 +1,3 @@
+# /etc/acpi/events/power
+event=button/power
+action=/etc/acpi/actions/power.sh %e

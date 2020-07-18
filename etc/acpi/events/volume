@@ -1,0 +1,3 @@
+# /etc/acpi/events/volume
+event=button/mute|volumeup|volumedown|f20
+action=/etc/acpi/actions/volume.sh %e
