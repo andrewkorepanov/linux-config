@@ -1,50 +1,30 @@
-
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" vim-plug 
-
 call plug#begin('~/.vim/plugged')
 
-Plug 'gentoo/gentoo-syntax'
 Plug 'tomasiser/vim-code-dark'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-"Plug 'vifm/vifm.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-"Plug 'neovim/nvim-lsp'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'puremourning/vimspector'
-" Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
-
 Plug 'Yggdroot/indentLine'
-
-"Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
 
-
+" color scheme
+" codedark: https://github.com/tomasiser/vim-code-dark#installation
+let g:codedark_term256=1
+colorscheme codedark
 
 " syntax highlight
 filetype plugin on
 syntax on
 
-" mouse support
-set mouse=a
+" airline delay
+set ttimeoutlen=50
 
 " line numbering
 set number
-
-" dark scheme
-set background=dark
 
 " trailing spaces/tabs
 set list
@@ -56,8 +36,6 @@ set cursorline
 " enable folding
 set foldmethod=indent
 set foldlevel=99
-" space open/closes folds
-nnoremap <space> za
 
 " set tabs to have 4 spaces
 set tabstop=4
@@ -69,16 +47,14 @@ set autoindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
 
-" color scheme
-" codedark: https://github.com/tomasiser/vim-code-dark#installation
-let g:codedark_term256=1
-colorscheme codedark
+" mouse support
+set ttymouse=sgr
+set mouse=a
 
-" visual autocomplete for command menu
-set wildmenu
-set lazyredraw          " redraw only when we need to.
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
+set wildmenu    " visual autocomplete for command menu
+set lazyredraw  " redraw only when we need to.
+set incsearch   " search as characters are entered
+set hlsearch    " highlight matches
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
@@ -87,14 +63,11 @@ highlight link pythonSpaceError NONE
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
 
-
-
 " rofi configuration syntax highlight
 au BufNewFile,BufRead /*.rasi setf css
 
 
-
-" Airline 
+" Airline
 " https://github.com/vim-airline/vim-airline
 " https://github.com/vim-airline/vim-airline-themes
 
@@ -102,18 +75,18 @@ let g:airline#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_theme='codedark'
- 
+
 if !exists('g:airline_symbols')
      let g:airline_symbols = {}
 endif
- 
+
 " unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = ''
 let g:airline_right_sep = '«'
 let g:airline_right_sep = ''
 let g:airline_symbols.crypt = ''
-let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '☰ '
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.branch = 'B'
 let g:airline_symbols.paste = 'ρ'
@@ -124,18 +97,10 @@ let g:airline_symbols.readonly = '&'
 let g:airline_symbols.dirty='⚡'
 
 
-
 " indent line
 " https://github.com/Yggdroot/indentLine
 let g:indentLine_enabled = 1
 let g:indentLine_char = '┆'
-
-
-
-" vifm
-" https://github.com/vifm/vifm.vim
-"nnoremap <silent> <leader>n :Vifm<CR>
-
 
 
 " NERDTree
@@ -144,50 +109,12 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 " side menu toggle
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-" vim-nerdtree-syntax-highlight
-" https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-" you can add these colors to your .vimrc to help customizing
-let s:brown = "905532"
-let s:aqua =  "3AFFDB"
-let s:blue = "689FB6"
-let s:darkBlue = "44788E"
-let s:purple = "834F79"
-let s:lightPurple = "834F79"
-let s:red = "AE403F"
-let s:beige = "F5C06F"
-let s:yellow = "F09F17"
-let s:orange = "D4843E"
-let s:darkOrange = "F16529"
-let s:pink = "CB6F6F"
-let s:salmon = "EE6E73"
-let s:green = "8FAA54"
-let s:lightGreen = "31B53E"
-let s:white = "FFFFFF"
-let s:rspec_red = 'FE405F'
-let s:git_orange = 'F54D27'
-
-let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['css'] = s:blue " sets the color of css files to blue
-
-let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
-
-let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
-"augroup nerdtree_open
-"    autocmd!
-"    autocmd VimEnter * NERDTree | wincmd p
-"augroup END
 
 
+" ---------------------------- UNSORTED ------------------------------ "
 
 " coc.vim
-" https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim
+" https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvimv
 let g:python3_host_prog = expand('/usr/bin/python3.6')
 
 " jsonc comments highlight
@@ -344,13 +271,10 @@ let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 "nmap <silent> <F5> <Plug>VimspectorContinue
 " Finish
 nmap <silent> <F12> :VimspectorReset<CR>
-" 
+
 nmap <silent> <F4> :VimspectorEval<CR>
 
 " Run python
 autocmd FileType python nmap <buffer> <F7> :w<CR>:AsyncRun -raw python %<CR>:copen<CR>
 autocmd FileType python imap <buffer> <F7> <esc>:w<CR>:AsyncRun -raw python %<CR>:copen<CR>
-
-
-
 
