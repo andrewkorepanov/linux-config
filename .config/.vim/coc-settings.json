@@ -1,6 +1,0 @@
-{
-    "python.jediEnabled": false,
-    "python.workspaceSymbols.ctagsPath": "/usr/bin/ctags",
-    "python.formatting.provider": "autopep8",
-    "coc.preferences.formatOnSaveFiletypes": ["*.py"]
-}
