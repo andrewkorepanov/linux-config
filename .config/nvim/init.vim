@@ -8,22 +8,19 @@ Plug 'tomasiser/vim-code-dark'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-"Plug 'vifm/vifm.vim'
-Plug 'preservim/nerdcommenter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-Plug 'neovim/nvim-lsp'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'puremourning/vimspector'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'puremourning/vimspector'
 " Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 
-Plug 'Yggdroot/indentLine'
-
-"Plug 'skywind3000/asyncrun.vim'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
+
 
 
 
@@ -83,6 +80,16 @@ nmap <silent> <leader>s :set spell!<CR>
 
 
 
+" netrw - the unloved directory browser
+" https://github.com/eiginn/netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+
+
 " rofi configuration syntax highlight
 au BufNewFile,BufRead /*.rasi setf css
 
@@ -107,7 +114,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = '«'
 let g:airline_right_sep = ''
 let g:airline_symbols.crypt = ''
-let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '☰ '
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.branch = 'B'
 let g:airline_symbols.paste = 'ρ'
@@ -119,25 +126,13 @@ let g:airline_symbols.dirty='⚡'
 
 
 
-" indent line
-" https://github.com/Yggdroot/indentLine
-let g:indentLine_enabled = 1
-let g:indentLine_char = '┆'
-
-
-
-" vifm
-" https://github.com/vifm/vifm.vim
-"nnoremap <silent> <leader>n :Vifm<CR>
-
-
-
 " NERDTree
 " https://jdhao.github.io/2018/09/10/nerdtree_usage/
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 " side menu toggle
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>\ :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>n :NERDTreeFind<CR>
 " vim-nerdtree-syntax-highlight
 " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -182,7 +177,8 @@ let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets th
 
 " coc.vim
 " https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim
-let g:python3_host_prog = expand('/usr/bin/python3.6')
+let g:python3_host_prog = expand('/usr/bin/python3')
+let g:python2_host_prog = expand('/usr/bin/python2')
 
 " jsonc comments highlight
 autocmd FileType json syntax match Comment +\/\/.\+$+
@@ -331,20 +327,59 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
+" coc-explorer
+nnoremap <silent> <leader>\ :CocCommand explorer<CR>
+nnoremap <silent> <leader>n :CocCommand explorer<CR>
+nnoremap <silent> <leader>b :CocCommand bookmark.toggle<CR>
+nnoremap <silent> <Leader>bj <Plug>(coc-bookmark-next)
+nnoremap <silent> <Leader>bk <Plug>(coc-bookmark-prev)
+
+
+
+" NERDCommenter
+" https://github.com/preservim/nerdcommenter
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+
+
+" VimWiki
+" https://github.com/vimwiki/vimwiki
+let g:vimwiki_list = [{'path': '~/documents/wiki/', 'path_html': '~/documents/wiki/html/'}]
+
+
 
 " vimspector 
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 " Start
-"nmap <silent> <F5> <Plug>VimspectorContinue
+nmap <silent> <F5> <Plug>VimspectorContinue
 " Finish
 nmap <silent> <F12> :VimspectorReset<CR>
 " 
 nmap <silent> <F4> :VimspectorEval<CR>
 
 " Run python
-autocmd FileType python nmap <buffer> <F7> :w<CR>:AsyncRun -raw python %<CR>:copen<CR>
-autocmd FileType python imap <buffer> <F7> <esc>:w<CR>:AsyncRun -raw python %<CR>:copen<CR>
-
-
-
-
+autocmd FileType python map <buffer> <C-F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <C-F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
