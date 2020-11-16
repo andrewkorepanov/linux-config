@@ -1,6 +1,22 @@
 {
+    "python.pythonPath": "python3",
     "python.jediEnabled": false,
     "python.workspaceSymbols.ctagsPath": "/usr/bin/ctags",
-    "python.formatting.provider": "autopep8",
-    "coc.preferences.formatOnSaveFiletypes": ["*.py"]
+    "python.formatting.provider": "yapf",
+    "coc.preferences.formatOnSaveFiletypes": ["*.py"],
+    "explorer.icon.collapsed": "▸",
+    "explorer.icon.expanded": "▾",
+    "explorer.previewAction.onHover": false,
+    "explorer.file.column.indent.chars": "  ",
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.column.indent.indentLine":false,
+    "explorer.contentWidthType": "win-width",
+    "explorer.sources": [
+        {
+            "name": "file",
+            "expand": true
+        }
+    ],
+    "explorer.width": 30,
+    "coc.preferences.extensionUpdateCheck": "daily"
 }

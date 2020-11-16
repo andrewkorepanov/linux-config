@@ -1,55 +1,50 @@
 
 " vim-plug 
-
 call plug#begin(stdpath('data').'/plugged')
 
 Plug 'gentoo/gentoo-syntax'
 Plug 'tomasiser/vim-code-dark'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'puremourning/vimspector'
-" Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
-
+Plug 'liuchengxu/vista.vim'
 Plug 'vimwiki/vimwiki'
+
 
 call plug#end()
 
 
+" coc.nvim
+let g:coc_global_extensions = [
+            \ 'coc-explorer',
+            \ 'coc-bookmark',
+            \ 'coc-html',
+            \ 'coc-css',
+            \ 'coc-json',
+            \ 'coc-clangd',
+            \ 'coc-python',
+            \ 'coc-snippets',
+            \ 'coc-tsserver'
+            \ ]
 
-
-" syntax highlight
-filetype plugin on
-syntax on
 
 " mouse support
 set mouse=a
-
 " line numbering
 set number
-
 " dark scheme
 set background=dark
-
 " trailing spaces/tabs
 set list
 set listchars=tab:→\ ,trail:·,extends:»,precedes:«,nbsp:¤
-
 " show a visual line under the cursor's current line
 set cursorline
-
 " enable folding
 set foldmethod=indent
 set foldlevel=99
-" space open/closes folds
-nnoremap <space> za
-
 " set tabs to have 4 spaces
 set tabstop=4
 set softtabstop=4
@@ -59,17 +54,20 @@ set expandtab
 set autoindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
-
-" color scheme
-" codedark: https://github.com/tomasiser/vim-code-dark#installation
-let g:codedark_term256=1
-colorscheme codedark
-
 " visual autocomplete for command menu
 set wildmenu
 set lazyredraw          " redraw only when we need to.
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+
+" syntax highlight
+filetype plugin on
+syntax on
+
+" color scheme
+" codedark: https://github.com/tomasiser/vim-code-dark#installation
+let g:codedark_term256=1
+colorscheme codedark
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
@@ -78,6 +76,8 @@ highlight link pythonSpaceError NONE
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
 
+" space open/closes folds
+nnoremap <space> za
 
 
 " netrw - the unloved directory browser
@@ -89,13 +89,11 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 
-
 " rofi configuration syntax highlight
 au BufNewFile,BufRead /*.rasi setf css
 
 
-
-" Airline 
+" Airline
 " https://github.com/vim-airline/vim-airline
 " https://github.com/vim-airline/vim-airline-themes
 
@@ -123,56 +121,6 @@ let g:airline_symbols.notexists = 'Ɇ'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.readonly = '&'
 let g:airline_symbols.dirty='⚡'
-
-
-
-" NERDTree
-" https://jdhao.github.io/2018/09/10/nerdtree_usage/
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-" side menu toggle
-" nnoremap <silent> <leader>\ :NERDTreeToggle<CR>
-" nnoremap <silent> <leader>n :NERDTreeFind<CR>
-" vim-nerdtree-syntax-highlight
-" https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-" you can add these colors to your .vimrc to help customizing
-let s:brown = "905532"
-let s:aqua =  "3AFFDB"
-let s:blue = "689FB6"
-let s:darkBlue = "44788E"
-let s:purple = "834F79"
-let s:lightPurple = "834F79"
-let s:red = "AE403F"
-let s:beige = "F5C06F"
-let s:yellow = "F09F17"
-let s:orange = "D4843E"
-let s:darkOrange = "F16529"
-let s:pink = "CB6F6F"
-let s:salmon = "EE6E73"
-let s:green = "8FAA54"
-let s:lightGreen = "31B53E"
-let s:white = "FFFFFF"
-let s:rspec_red = 'FE405F'
-let s:git_orange = 'F54D27'
-
-let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['css'] = s:blue " sets the color of css files to blue
-
-let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
-
-let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
-"augroup nerdtree_open
-"    autocmd!
-"    autocmd VimEnter * NERDTree | wincmd p
-"augroup END
-
 
 
 " coc.vim
@@ -328,57 +276,21 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 " coc-explorer
-nnoremap <silent> <leader>\ :CocCommand explorer<CR>
-nnoremap <silent> <leader>n :CocCommand explorer<CR>
+nnoremap <silent> <leader>d :CocCommand explorer<CR>
 nnoremap <silent> <leader>b :CocCommand bookmark.toggle<CR>
 nnoremap <silent> <Leader>bj <Plug>(coc-bookmark-next)
 nnoremap <silent> <Leader>bk <Plug>(coc-bookmark-prev)
 
 
-
-" NERDCommenter
-" https://github.com/preservim/nerdcommenter
-
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-
-" Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_java = 1
-
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
-let g:NERDToggleCheckAllLines = 1
-
+" Vista.vim 
+nnoremap <silent> <leader>t :Vista!!<CR>
+let g:vista_executive_for = { 'python': 'coc' }
 
 
 " VimWiki
 " https://github.com/vimwiki/vimwiki
 let g:vimwiki_list = [{'path': '~/documents/wiki/', 'path_html': '~/documents/wiki/html/'}]
 
-
-
-" vimspector 
-let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
-" Start
-nmap <silent> <F5> <Plug>VimspectorContinue
-" Finish
-nmap <silent> <F12> :VimspectorReset<CR>
-" 
-nmap <silent> <F4> :VimspectorEval<CR>
 
 " Run python
 autocmd FileType python map <buffer> <C-F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
