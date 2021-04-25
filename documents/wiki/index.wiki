@@ -1,0 +1,5 @@
+= Wiki =
+    * [[Docker]] -- docker CLI commands
+    * [[Gentoo]] -- gentoo installation details
+    * [[Tasks]] -- things to be done
+    * [[Ideas]] -- ideas

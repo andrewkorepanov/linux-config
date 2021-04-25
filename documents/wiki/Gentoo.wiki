@@ -1,0 +1,46 @@
+= emerge =
+1. emerge --sync
+2. emerge -av --update --newuse --deep --with-bdeps=y @world
+
+= kernel upgrade =
+1. su
+2. cd /usr/src/linux-old.version-gentoo; cp .config /usr/src/linux-new.version-gentoo/; cd /usr/src/linux; make olddefconfig
+3. cd /usr/src/linux; make && make modules_install && make install
+4. cd /boot; cp vmlinuz-new.version-gentoo efi/gentoo/bootx64.efi
+5. cd /usr/src/linux; make modules_prepare; emerge -av @module-rebuild
+
+= @world =
+1. cat /install/var/lib/portage/world
+2. ls /var/db/pkg/*
+3. All installed apps: eix-installed -a
+
+= CUDA =
+1. Install cudnn with USE="cuda10-1 -cuda10-2" (for tensorflow <=2.3.0)
+2. Before intallation download cudnn from https://developer.nvidia.com/cudnn 
+   and save it to /var/cache/distfiles
+3. It automatically installs nvidia-cuda-toolkit (version 10.1)
+
+= Docker GPU =
+1. Install x11-drivers/nvidia-drivers wih USE="uvm"
+2. Install dev-util/nvidia-cuda-toolkit from overlay "guru"
+
+= Automount External Drive =
+1. 
+
+= rclone (dropbox) =
+For details see https://rclone.org/dropbox/
+The name of the local remote is dropbox:
+To re-configure run: rclone config
+To copy local files to the server use: rclone copy ~/dropbox dropbox:
+To copy remote file to the local dir use: rclone copy dropbox: ~/dropbox
+
+= Pdf =
+1. Convert jpg to pdf [ImageMagick]:
+    convert input.jpg output.pdf
+2. merge multiple pdf files
+    gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=output.pdf raw_passport_01.pdf raw_passport_02.pdf ...
+2. reduce pdf file size
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output_small.pdf input_full.pdf
+3. Combine multiple files, for example all *.jpg [ImageMagick]:
+    magick montage *.jpg -mode concatenate -tile 1x pages.pdf
+Note: if there are problems with policy, then edit file /etc/ImageMagick-7/policy.xml, comment lines: <policy domain="coder" rights="none" />

@@ -1,0 +1,14 @@
+= Docker =
+
+https://www.tensorflow.org/install/docker
+https://hub.docker.com/r/tensorflow/tensorflow
+
+== Tensorflow/Jupyter ==
+docker run --gpus all -it --rm -v $(realpath ~/work/tensorflow-docs/site/en/tutorials/):/tf/tut -p 8888:8888 tensorflow/tensorflow:latest-gpu-jupyter
+
+== Tensorflow/Test ==
+docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+
+== Tensorflow/Bash ==
+docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu bash
+
